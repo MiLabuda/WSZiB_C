@@ -1,0 +1,3 @@
+/Users/useruser/CLionProjects/03_arrays/03_08_insert_float/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/useruser/CLionProjects/03_arrays/03_08_insert_float/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/useruser/CLionProjects/03_arrays/03_08_insert_float/cmake-build-debug/CMakeFiles/03_08.dir

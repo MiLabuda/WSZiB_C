@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/useruser/CLionProjects/WSZiB/04_functions/04_04_divided_by_13/main.c
+stdio.h
+-
+stdlib.h
+-
+

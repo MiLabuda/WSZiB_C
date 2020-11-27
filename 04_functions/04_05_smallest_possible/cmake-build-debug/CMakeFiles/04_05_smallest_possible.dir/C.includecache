@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/useruser/CLionProjects/WSZiB/04_functions/04_05_smallest_possible/main.c
+stdio.h
+-
+stdlib.h
+-
+

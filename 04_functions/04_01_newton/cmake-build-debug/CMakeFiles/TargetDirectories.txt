@@ -1,0 +1,3 @@
+/Users/useruser/CLionProjects/WSZiB/04_functions/04_01_newton/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/useruser/CLionProjects/WSZiB/04_functions/04_01_newton/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/useruser/CLionProjects/WSZiB/04_functions/04_01_newton/cmake-build-debug/CMakeFiles/04_01_newton.dir

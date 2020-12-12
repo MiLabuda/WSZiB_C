@@ -7,7 +7,6 @@ int triangleField(void);
 
 int main() {
     char command = '0';
-    printf("Hello, World!\n");
     while(command != 'K'){
         printf("Kalkulator pól powierzchni:\n"
                "[1] - Pole powierzchni prostokątu: \n"

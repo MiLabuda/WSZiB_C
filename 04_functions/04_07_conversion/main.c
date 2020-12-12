@@ -3,40 +3,53 @@
 
 int arr[SIZE];
 
-int conversion(int number);
+void conversion(void);
 
 int main() {
-    int n = 0;
-
-    printf("Wprowadź liczbę dziesiętną całkowitą: ");
-    scanf("%d", &n);
-//    for(int i = 0; i < SIZE; i++){
-//        arr[SIZE] = conversion(n);
-//    }
-
-    printf("\nPodana liczba w systemie 16-stkowym to: ");
-    for(int i = sizeof(arr[])-1; i >= 0; --i){
-        printf("%d  ", wynik);
-    }
+    conversion();
     return 0;
 }
 
-int conversion(int number){
-    int r = 0;
-    int i = 0;
-    int counter = 0;
+void conversion(void) {
+    int number = 0,
+        rest = 0;
+    char letter = '0';
 
-    while(number >= 16) {
-        r = number % 16;
+    printf("Wprowadź liczbę dziesiętną całkowitą: ");
+    scanf("%d", &number);
+
+    while (number >= 10) {
+        rest = number % 16;
         number /= 16;
-        arr[i] = r;
-        i++;
+        switch (rest) {
+            case 10:
+                letter = 'A';
+                break;
+            case 11:
+                letter = 'B';
+                break;
+            case 12:
+                letter = 'C';
+                break;
+            case 13:
+                letter = 'D';
+                break;
+            case 14:
+                letter = 'E';
+                break;
+            case 15:
+                letter = 'F';
+                break;
+            default:
+                rest = rest;
+        }
+
+        if(rest >= 10){
+            printf("%c", letter);
+        }else if(rest < 10){
+            printf("%d", rest);
+        }
+        else if(number >= 10)
+
     }
-    arr[i] = number
-    i++;
-
-    for(int j = 0; )
-
-
-    return arr[];
 }

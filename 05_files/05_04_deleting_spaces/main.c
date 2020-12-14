@@ -25,9 +25,9 @@ int main(int argc, char *argv[]){
         printf("\nError, Unable to open the file for writing\n");
     }
 
-
+    while((input = fgetc(source)) != EOF){
         if (input == 32 && prev == 32){
-        spacesDeleted++;
+            spacesDeleted++;
         }else{
             fputc(input, target);
         }
@@ -36,7 +36,7 @@ int main(int argc, char *argv[]){
 
     printf("Total number of deleted spaces: %d\n", spacesDeleted);
 
-    fprintf(target, "The number of deleted spaces: %d", spacesDeleted);
+    fprintf(target, "\nThe number of deleted spaces: %d", spacesDeleted);
 
     fclose(source);
     fclose(target);

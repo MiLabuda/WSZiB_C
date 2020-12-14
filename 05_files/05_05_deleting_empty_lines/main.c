@@ -26,12 +26,7 @@ int main(int argc, char *argv[]){
 
     ;
     while(input = fgets(line, MAX, source)){
-        if (strcmp(line,"\n"  ) != 0 &&
-            strcmp(line,"\r\n") != 0 &&
-            strcmp(line,"\0"  ) != 0 &&
-            1) {
-            fputs(input, target);
-        } else {
+        else {
             linesDeleted++;
         }
     }

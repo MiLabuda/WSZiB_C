@@ -9,34 +9,38 @@ int main(int argc, char *argv[]){
                      *newFileName = argv[2],
                      *input,
                       line[MAX];
-        //Wczytywanie plików in/out
+
     FILE *source = fopen(filename, "r");
-    if (source == NULL){
+    if (!source){
         printf("\nError, Unable to open the file for reading\n");
+
     }
-    fclose(source);
+
     FILE *target = fopen(newFileName, "w");
-    if (target == NULL){
+    if (!source){
         printf("\nError, Unable to open the file for writing\n");
     }
-    
-    //Sprawdzanko czy dobrze wchodzą w konsoli
-    printf("How many arguments are you passing: %d", argc);
+
+    printf("How many arguments are you passing: %d\n", argc);
 
 
-    input = fgets(line, MAX, source);
-    while (feof(source) == 0) {
-        if (strcmp(input, "\n") || strcmp(input, "\r\n")) {
-            linesDeleted++;
-        } else {
+    ;
+    while(input = fgets(line, MAX, source)){
+        if (strcmp(line,"\n"  ) != 0 &&
+            strcmp(line,"\r\n") != 0 &&
+            strcmp(line,"\0"  ) != 0 &&
+            1) {
             fputs(input, target);
+        } else {
+            linesDeleted++;
         }
     }
 
-    printf("Total number of deleted spaces: %d\n", linesDeleted);
+    printf("Total number of deleted lines: %d\n", linesDeleted);
 
-    fprintf(target, "The number of deleted spaces: %d", linesDeleted);
+    fprintf(target, "The number of deleted lines: %d\n", linesDeleted);
 
+    fclose(source);
     fclose(target);
 
     return 0;

@@ -1,0 +1,3 @@
+/Users/useruser/CLionProjects/WSZiB/05_files/05_02_letters/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/useruser/CLionProjects/WSZiB/05_files/05_02_letters/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/useruser/CLionProjects/WSZiB/05_files/05_02_letters/cmake-build-debug/CMakeFiles/05_02_letters.dir

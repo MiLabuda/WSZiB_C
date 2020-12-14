@@ -14,7 +14,7 @@ int main(int argc, char *argv[]){
     if (source == NULL){
         printf("\nError, Unable to open the file for reading\n");
     }
-
+    fclose(source);
     FILE *target = fopen(newFileName, "w");
     if (target == NULL){
         printf("\nError, Unable to open the file for writing\n");
@@ -23,20 +23,20 @@ int main(int argc, char *argv[]){
     //Sprawdzanko czy dobrze wchodzą w konsoli
     printf("How many arguments are you passing: %d", argc);
 
-    input = fgets(line, sizeof(line), source);
 
-    while (input != NULL) {
-        if (strcmp(line, "\n") || strcmp(line, "\r\n")) {
+    input = fgets(line, MAX, source);
+    while (feof(source) == 0) {
+        if (strcmp(input, "\n") || strcmp(input, "\r\n")) {
             linesDeleted++;
         } else {
             fputs(input, target);
         }
     }
+
     printf("Total number of deleted spaces: %d\n", linesDeleted);
 
     fprintf(target, "The number of deleted spaces: %d", linesDeleted);
 
-    fclose(source);
     fclose(target);
 
     return 0;
